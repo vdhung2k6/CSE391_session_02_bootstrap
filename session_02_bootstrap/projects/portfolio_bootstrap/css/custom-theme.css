@@ -1,0 +1,14 @@
+/* Custom Bootstrap Utilities */
+
+/* Additional spacing utilities */
+@media (min-width: 992px) {
+    .py-lg-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
+    }
+}
+
+/* Hero section minimum height */
+.min-vh-75 {
+    min-height: 75vh;
+}

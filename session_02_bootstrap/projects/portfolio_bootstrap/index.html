@@ -1,12 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vũ Duy Hưng - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/custom-theme.css" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">VDH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-5 py-lg-6 bg-light">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <h1 class="display-4 fw-bold mb-4">Hi, I'm <span class="text-primary">Vũ Duy Hưng</span></h1>
+                    <p class="lead text-muted mb-4">
+                        Software Engineering student passionate about building responsive web applications using modern technologies like Bootstrap, React, and Node.js.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/300x300?text=Profile+Picture" alt="Profile" class="rounded-circle img-fluid shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 py-lg-6">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://via.placeholder.com/300x200?text=Project+1" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Platform</h5>
+                            <p class="card-text">A responsive e-commerce website built with Bootstrap, JavaScript, and Node.js backend.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Bootstrap</span>
+                                <span class="badge bg-success">JavaScript</span>
+                                <span class="badge bg-info">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://via.placeholder.com/300x200?text=Project+2" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Management App</h5>
+                            <p class="card-text">A productivity app featuring task creation, filtering, and real-time synchronization.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-success">Firebase</span>
+                                <span class="badge bg-warning">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://via.placeholder.com/300x200?text=Project+3" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather Dashboard</h5>
+                            <p class="card-text">Real-time weather application with API integration and responsive Bootstrap layout.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Bootstrap</span>
+                                <span class="badge bg-success">API</span>
+                                <span class="badge bg-info">AJAX</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 py-lg-6 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Frontend</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">HTML5 & CSS3</li>
+                                <li class="mb-2">Bootstrap 5</li>
+                                <li class="mb-2">JavaScript (ES6+)</li>
+                                <li class="mb-2">React.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Backend</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">Node.js</li>
+                                <li class="mb-2">Express.js</li>
+                                <li class="mb-2">MongoDB</li>
+                                <li class="mb-2">REST APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Tools & Others</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">Git & GitHub</li>
+                                <li class="mb-2">VS Code</li>
+                                <li class="mb-2">Responsive Design</li>
+                                <li class="mb-2">Web Performance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 py-lg-6">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="mb-3">
+                        I'm a Software Engineering student with a passion for creating beautiful, responsive web applications. 
+                        With expertise in Bootstrap, React, and Node.js, I focus on building user-friendly interfaces and scalable backend solutions.
+                    </p>
+                    <p class="mb-3">
+                        I believe in writing clean, maintainable code and continuously learning new technologies. When I'm not coding, 
+                        you'll find me exploring web design trends or contributing to open-source projects.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-envelope"></i> Email</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="https://via.placeholder.com/400x300?text=About+Image" alt="About" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 py-lg-6 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="mb-2">&copy; 2024 Vũ Duy Hưng. All rights reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-md-end">
+                    <p class="mb-0">Built with Bootstrap 5 | Responsive Design</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
