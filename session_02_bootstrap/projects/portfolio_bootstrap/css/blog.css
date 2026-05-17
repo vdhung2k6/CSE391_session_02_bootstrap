@@ -1,0 +1,74 @@
+/* Blog Cards Styling */
+
+.blog-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.blog-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover img {
+    transform: scale(1.05);
+}
+
+.blog-card .card-title a {
+    transition: color 0.2s ease;
+}
+
+.blog-card .card-title a:hover {
+    color: #0d6efd !important;
+}
+
+.blog-card .badge {
+    font-size: 0.7rem;
+}
+
+.blog-card .stretched-link::after {
+    z-index: 1;
+}
+
+/* Pagination styling */
+.pagination {
+    gap: 0.25rem;
+}
+
+.page-link {
+    border-radius: 0.375rem;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.page-link:hover:not(.disabled) {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+.page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-card .card-title {
+        font-size: 1rem;
+    }
+
+    .blog-card .card-text {
+        font-size: 0.85rem;
+    }
+
+    .blog-card img {
+        height: 200px;
+    }
+}
